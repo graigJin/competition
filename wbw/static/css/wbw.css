@@ -1,0 +1,73 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.flex-row-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-row-container .flex-item{
+    background-color: lightsalmon;
+    width: 450px;
+    height: 300px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 40px;
+}
+
+.flex-row-container .flex-item:hover{
+    background-color: antiquewhite;
+    width: 450px;
+    height: 300px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 40px;
+}
+
+.row-top {
+    background-color: lightgreen;
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.row-top a, .row-top a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.row-top a:active, .row-top a:hover{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.row-image {
+    background-color: lightblue;
+    width: 100%;
+    height: 200px;
+    padding: 20px 20px 20px 40px;
+}
+
+.row-bottom {
+    background-color: lightgreen;
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}

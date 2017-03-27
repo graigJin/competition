@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Competition Database</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/wbw.css' %}">
+    </head>
+
+    <body>
+        <div class="row-top">
+            <a href="/">Home</a>
+            <a href="/admin/">Admin</a>
+        </div>
+
+        <div class="row-image">
+            Row-Image
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+        <div class="row-bottom">
+            Row-Bottom
+        </div>
+    </body>
+</html>

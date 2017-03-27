@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
+from .models import Product
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the wbw index.")
+def product_list(request):
+    products = Product.objects.all()
+    return render(request, 'wbw/product_list.html', {'products': products})

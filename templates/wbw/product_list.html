@@ -1,0 +1,19 @@
+{% extends 'wbw/base.html' %}
+
+{% block content %}
+    {% for product in products %}
+        {% if product.new_line %}
+            <div class="flex-row-container">
+                <div class="flex-item">
+                    <p>{{ product.name }}</p>
+                    <p>{{ product.description }}</p>
+                </div>
+            {% else %}
+                <div class="flex-item">
+                    <p>{{ product.name }}</p>
+                    <p>{{ product.description }}</p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
