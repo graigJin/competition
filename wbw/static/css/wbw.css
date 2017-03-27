@@ -36,6 +36,19 @@ body {
     padding: 20px 20px 20px 40px;
 }
 
+.flex-row-container a, .flex-row-container a:hover, .flex-row-container a:visited, .flex-row-container a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.flex-row-container .big-flex-item{
+    background-color: lightsalmon;
+    width: 900px;
+    height: 700px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 40px;
+}
+
 .row-top {
     background-color: lightgreen;
     width: 100%;
@@ -63,7 +76,6 @@ body {
 }
 
 .row-bottom {
-    background-color: lightgreen;
     width: 100%;
     padding: 20px 20px 20px 40px;
 }

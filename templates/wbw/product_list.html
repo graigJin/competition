@@ -4,15 +4,19 @@
     {% for product in products %}
         {% if product.new_line %}
             <div class="flex-row-container">
-                <div class="flex-item">
-                    <p>{{ product.name }}</p>
-                    <p>{{ product.description }}</p>
-                </div>
+                <a href="{% url 'product_detail' pk=product.pk %}">
+                    <div class="flex-item">
+                        <p>{{ product.name }}</p>
+                        <p>{{ product.description }}</p>
+                    </div>
+                </a>
             {% else %}
-                <div class="flex-item">
-                    <p>{{ product.name }}</p>
-                    <p>{{ product.description }}</p>
-                </div>
+                <a href="{% url 'product_detail' pk=product.pk %}">
+                    <div class="flex-item">
+                        <p>{{ product.name }}</p>
+                        <p>{{ product.description }}</p>
+                    </div>
+                </a>
             </div>
         {% endif %}
     {% endfor %}
